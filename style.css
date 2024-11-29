@@ -1,0 +1,181 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    min-height: 100%;
+    width: 100vw;
+    background-color: aqua;
+   overflow-x: hidden;
+   font-size: 20px;
+   font-family: cursive;
+}
+
+.container{
+    height: 100%;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+}
+
+.header{
+    top: 0%;
+    min-height: 5%;
+    width: 100vw;
+    text-decoration-thickness: 100vw;
+    background-color: #333;
+}
+.upper-sec{
+    min-height: 30%;
+    top: 10%;
+    margin: 0px 20px;
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+}
+
+.middle{
+    top: 80%;
+    min-height: 40%;
+    margin: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.bottom{
+    top: 150%;
+    min-height: 30%;
+    margin: 0px 20px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.middle div{
+    width: 400px;
+    padding: 10px;
+    margin: 0px;
+    border: solid black;
+
+}
+
+.upper-sec img{
+     height: 300px;
+     width: 300px;
+     border-radius: 50%;
+}
+
+.middle1 {
+    border: solid black;
+    margin: 0px 0px;
+    padding: 0px;
+
+}
+
+.middle1 span{
+    border: solid black;
+    margin: 0px 0px;
+    display: block;
+    min-height: 50px;
+    text-align: center;
+}
+
+.bottom {
+    display: block;
+}
+.bottom h1{
+    margin-left: 30px;
+}
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    justify-content: center;
+    
+}
+.reviews div{
+    border: solid;
+    min-height: 200px;
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.web-bar{
+    background-color: #333;
+    padding: 10px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 50px;
+}
+
+.menu-btn{
+    background-color: #444;
+    color: white;
+    border: none;
+    padding:10px 20px ;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-btn:hover{
+    background-color: #555;
+}
+
+.menu-content{
+    display: none;
+    background-color: #333;
+    position: absolute;
+    padding: 10px;
+    top: 50px;
+    width: 100px;
+    z-index: 1;
+}
+
+.menu-content ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-content li{
+    padding: 8px;
+}
+
+.menu-content li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+
+}
+
+.web-bar a:hover{
+    background-color: #555;
+}
+
+.links{
+    background-color: #444;
+    color: white;
+    border: none;
+    padding:10px 20px ;
+    cursor: pointer;
+    font-size: 16px;
+    border-right: 20px;
+    right: 0%;
+    position: absolute;
+
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    margin: 4px;
+}
+
+.menu-content li a:hover{
+    border: solid;
+    font-size: 21px;
+}
