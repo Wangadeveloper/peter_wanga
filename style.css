@@ -1,21 +1,46 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    scroll-behavior: smooth;
 }
 
+/* Header & Hero Section */
 header {
-    background-color: #2c3e50;
+    background: #2c3e50;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 50px 20px;
 }
 
+.hero {
+    max-width: 600px;
+    margin: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #e67e22;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #d35400;
+}
+
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -29,25 +54,66 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Sections */
 section {
-    padding: 20px;
+    padding: 40px 20px;
     max-width: 800px;
     margin: auto;
 }
 
 h2 {
+    text-align: center;
     border-bottom: 2px solid #2c3e50;
     padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
-.project {
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    background: #34495e;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Project Cards */
+.project-card {
     background: white;
-    padding: 15px;
+    padding: 20px;
     margin: 15px 0;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+/* Contact Section */
+#contact p {
+    text-align: center;
+}
+
+#contact a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
     background-color: #2c3e50;
     color: white;
@@ -56,10 +122,16 @@ footer {
     margin-top: 20px;
 }
 
+/* Responsive Design */
 @media (max-width: 600px) {
     nav ul li {
         display: block;
         text-align: center;
         margin: 10px 0;
+    }
+
+    .skills-container {
+        display: block;
+        text-align: center;
     }
 }
