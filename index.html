@@ -3,83 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanga Peter Otieno - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <meta name="description" content="Wanga Peter - Full Stack Web Developer and Machine Learning Engineer">
+    <meta name="keywords" content="Full Stack Developer, Machine Learning, Data Science, Python, Flask, Web Development, Portfolio">
+    <title>Wanga Peter - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header -->
+    <!-- Header Section -->
     <header>
-        <div class="hero">
-            <h1>Wanga Peter Otieno</h1>
-            <p>Software Engineer | Machine Learning | Fintech</p>
-            <a href="#contact" class="cta-button">Hire Me</a>
+        <div class="container">
+            <button class="menu-btn" onclick="toggleMenu()">☰ MENU</button>
+            <div class="logo">
+                <h1>Wanga Peter</h1>
+            </div>
+            <div class="menu-content" id="menu-content">
+                <ul>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/Wangadeveloper/">GitHub</a></li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate software engineer skilled in AI, fintech, and web development. I build scalable AI-powered financial applications and full-stack banking systems.</p>
-    </section>
+    <!-- Main Section -->
+    <main>
+        <section class="intro">
+            <div class="container">
+                <img src="peter.jpeg" alt="Wanga Peter" class="profile-img">
+                <div class="intro-text">
+                    <h2>Full Stack Web Developer | Machine Learning Engineer</h2>
+                    <p>Specializing in Flask, HTML, CSS, JavaScript, Python, C++, Java, and Mobile App Development.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">Python</div>
-            <div class="skill">Flask</div>
-            <div class="skill">Machine Learning</div>
-            <div class="skill">Fintech Solutions</div>
-            <div class="skill">API Development</div>
-            <div class="skill">Web Development</div>
-        </div>
-    </section>
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project-links">
+                    <a href="https://github.com/Wangadeveloper/artificial-intelligence" target="_blank">Machine Learning Projects</a>
+                    <a href="https://github.com/Wangadeveloper/joshem" target="_blank">Web Development Projects</a>
+                    <a href="https://github.com/Wangadeveloper/" target="_blank">C++ Projects</a>
+                    <a href="https://github.com/Wangadeveloper/" target="_blank">Mobile App Development with Java</a>
+                </div>
+            </div>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Kaggle ML Competitions</h3>
-            <ul>
-                <li>96% accurate model for energy consumption predictions.</li>
-                <li>Bronze medal in financial market prediction (Jane Street).</li>
-                <li>AI model for lumbar spine disease severity analysis.</li>
-                <li>Swahili-English translation AI (Google competition).</li>
-            </ul>
-        </div>
-        <div class="project-card">
-            <h3>Banking Web Application</h3>
-            <p>Built a full-featured banking system with AI-powered financial advisory.</p>
-            <ul>
-                <li>Integrated Gemini AI for loan recommendations.</li>
-                <li>Frontend: HTML, CSS, JavaScript</li>
-                <li>Backend: Flask (Python), SQLAlchemy (Database)</li>
-            </ul>
-        </div>
-    </section>
+        <!-- Work Experience Section -->
+        <section id="experience">
+            <div class="container">
+                <h2>Work Experience</h2>
+                <p>Worked as a Software Engineer at Financial Services Association in Busia, Kenya.</p>
+                <a href="my_cv7.pdf" class="btn">View Full CV</a>
+            </div>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:peterwanga326@gmail.com">peterwanga326@gmail.com</a></p>
-        <p>Phone: 0771709020</p>
-        <p>GitHub: <a href="https://github.com/Wangadeveloper" target="_blank">github.com/Wangadeveloper</a></p>
-    </section>
+        <!-- Education Section -->
+        <section id="education">
+            <div class="container">
+                <h2>Education</h2>
+                <p>Graduated from Kirinyaga University of Science and Technology with a Second Class Upper Division.</p>
+                <h3>Courses I Took:</h3>
+                <ul>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Web Development</li>
+                    <li>Mobile App Development</li>
+                    <li>AI (Machine Learning)</li>
+                    <li>Database Management</li>
+                    <li>Distributed Databases</li>
+                    <li>Human-Computer Interaction</li>
+                    <li>Software Quality Assurance</li>
+                    <li>Object-Oriented Programming</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form action="submit_form.php" method="POST">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews">
+            <div class="container">
+                <h2>Reviews</h2>
+                <div class="reviews">
+                    <div class="review">
+                        <h3>Jane</h3>
+                        <p>"Wanga was such a hardworking student, very brilliant in mathematics."</p>
+                    </div>
+                    <div class="review">
+                        <h3>Jackson</h3>
+                        <p>"He was my best biology student, very disciplined and hardworking."</p>
+                    </div>
+                    <div class="review">
+                        <h3>Manager Roseline</h3>
+                        <p>"Having worked with him, I recommend anyone to give him an opportunity whenever possible. You won’t regret it!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Wanga Peter Otieno. All Rights Reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Wanga Peter. All rights reserved.</p>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
