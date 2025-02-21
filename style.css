@@ -1,62 +1,93 @@
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-}
-
-.web-bar {
+/* Top menu bar styling */
+.we-bar {
+    background-color: #007bff;
+    padding: 10px 15px;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 15px 20px;
 }
 
-.menu-btn {
-    background-color: #444;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.menu-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+/* Upper section styling */
+.upper-sec {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.upper-sec img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.upper-sec h2 {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Middle sections */
+.middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-.menu-content a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 15px;
+.middle1, .middle2, .middle3 {
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.menu-content a:hover {
-    background-color: #555;
-    border-radius: 5px;
+.middle1 h1, .middle2 h1, .middle3 h2 {
+    color: #007bff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
 }
 
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.middle1 span, .middle2 span {
     display: block;
-    margin: 20px auto;
+    margin: 8px 0;
+    font-size: 16px;
+    color: #444;
 }
 
-.intro-text {
-    max-width: 600px;
-    margin: auto;
-    font-size: 18px;
+.middle3 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.middle3 a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .middle {
+        grid-template-columns: 1fr;
+    }
 }
