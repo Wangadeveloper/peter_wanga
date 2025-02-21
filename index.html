@@ -10,20 +10,20 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header>
+    <header class="web-bar">
         <div class="container">
             <button class="menu-btn" onclick="toggleMenu()">☰ MENU</button>
             <div class="logo">
                 <h1>Wanga Peter</h1>
             </div>
-            <div class="menu-content" id="menu-content">
+            <nav class="menu-content" id="menu-content">
                 <ul>
                     <li><a href="#publications">Publications</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="https://github.com/Wangadeveloper/">GitHub</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
 
@@ -51,75 +51,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Work Experience Section -->
-        <section id="experience">
-            <div class="container">
-                <h2>Work Experience</h2>
-                <p>Worked as a Software Engineer at Financial Services Association in Busia, Kenya.</p>
-                <a href="my_cv7.pdf" class="btn">View Full CV</a>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education">
-            <div class="container">
-                <h2>Education</h2>
-                <p>Graduated from Kirinyaga University of Science and Technology with a Second Class Upper Division.</p>
-                <h3>Courses I Took:</h3>
-                <ul>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Web Development</li>
-                    <li>Mobile App Development</li>
-                    <li>AI (Machine Learning)</li>
-                    <li>Database Management</li>
-                    <li>Distributed Databases</li>
-                    <li>Human-Computer Interaction</li>
-                    <li>Software Quality Assurance</li>
-                    <li>Object-Oriented Programming</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <form action="submit_form.php" method="POST">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
-        </section>
-
-        <!-- Reviews Section -->
-        <section id="reviews">
-            <div class="container">
-                <h2>Reviews</h2>
-                <div class="reviews">
-                    <div class="review">
-                        <h3>Jane</h3>
-                        <p>"Wanga was such a hardworking student, very brilliant in mathematics."</p>
-                    </div>
-                    <div class="review">
-                        <h3>Jackson</h3>
-                        <p>"He was my best biology student, very disciplined and hardworking."</p>
-                    </div>
-                    <div class="review">
-                        <h3>Manager Roseline</h3>
-                        <p>"Having worked with him, I recommend anyone to give him an opportunity whenever possible. You won’t regret it!"</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
@@ -129,6 +60,10 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu-content').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
